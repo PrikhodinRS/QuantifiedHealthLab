@@ -8,8 +8,14 @@ Static landing page for **Quantified Health Lab**.
 
 Primary CTA: https://t.me/QuantifiedHealthLab
 
-GitHub Pages target: https://prikhodinrs.github.io/QuantifiedHealthLab/
+Production domain: https://quantifiedhealthlab.com/
 
-## Publish
+Fallback GitHub Pages URL: https://prikhodinrs.github.io/QuantifiedHealthLab/
 
-Enable **Settings → Pages → Deploy from a branch → main / root**.
+## GitHub Pages
+
+Publishing source: **main / root**.
+
+Custom domain: **quantifiedhealthlab.com**.
+
+The repository root contains a `CNAME` file with `quantifiedhealthlab.com`.
