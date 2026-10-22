@@ -144,13 +144,16 @@
         qhl_search_us: 'https://t.me/+1OTjrwlGptJmZDRi',
         qhl_search_uk: 'https://t.me/+PlfsONaQGO00N2Ni',
         qhl_search_ca: 'https://t.me/+i8XgMd5tTps2MDEy',
-        qhl_search_au: 'https://t.me/+bGYRIBf7X9QyODI6'
+        qhl_search_au: 'https://t.me/+bGYRIBf7X9QyODI6',
+        qhl_facebook_groups: 'https://t.me/+b3RYeINsQAEwNjYy'
       };
 
       function stored(k){ return sessionStorage.getItem('qhl_' + k) || ''; }
       function campaignKey(){
         const c = stored('utm_campaign').toLowerCase();
+        const s = stored('utm_source').toLowerCase();
         if (inviteLinks[c]) return c;
+        if (s === 'facebook' && (!c || c.includes('facebook'))) return 'qhl_facebook_groups';
         if (c.includes('_us')) return 'qhl_search_us';
         if (c.includes('_uk')) return 'qhl_search_uk';
         if (c.includes('_ca')) return 'qhl_search_ca';
