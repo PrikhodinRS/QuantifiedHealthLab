@@ -1,0 +1,1 @@
+Temporary public image assets used to publish archived Quantified Health Lab Facebook photo posts via Windsor.ai.
